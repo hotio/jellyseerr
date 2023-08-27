@@ -31,4 +31,3 @@ RUN curl -fsSL "https://github.com/fallenbagel/jellyseerr/archive/v${VERSION}.ta
     chmod -R u=rwX,go=rX "${APP_DIR}"
 
 COPY root/ /
-RUN chmod -R +x /etc/cont-init.d/ /etc/services.d/
