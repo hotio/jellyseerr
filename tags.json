@@ -2,13 +2,13 @@
   "release": {
     "description": "Releases",
     "hide": false,
-    "last_updated": "2024-03-01T21:30:03.000Z",
-    "last_updated_url": "https://github.com/hotio/jellyseerr/actions/runs/8117312005",
+    "last_updated": "2024-03-02T06:34:16.000Z",
+    "last_updated_url": "https://github.com/hotio/jellyseerr/actions/runs/8120934932",
     "latest": true,
     "tags": [
       "release",
       "release-1.7.0",
-      "release-0020a8c"
+      "release-914a24d"
     ]
   }
 }
