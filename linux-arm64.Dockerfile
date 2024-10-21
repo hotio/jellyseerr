@@ -9,7 +9,6 @@ ENV COMMIT_TAG=${VERSION}
 RUN mkdir /build && \
     curl -fsSL "https://github.com/fallenbagel/jellyseerr/archive/v${VERSION}.tar.gz" | tar xzf - -C "/build" --strip-components=1 && \
     cd /build && \
-    CYPRESS_INSTALL_BINARY=0 pnpm --frozen-lockfile --network-timeout 1000000 && \
     pnpm build && \
     pnpm install --production --ignore-scripts --prefer-offline && \
     pnpm cache clean
