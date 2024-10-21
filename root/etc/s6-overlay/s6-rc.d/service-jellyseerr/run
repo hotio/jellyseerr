@@ -6,4 +6,4 @@ umask "${UMASK}"
 HOME="${APP_DIR}" && export HOME
 
 cd "${APP_DIR}" || exit 1
-exec s6-setuidgid hotio yarn start
+exec s6-setuidgid hotio pnpm start
