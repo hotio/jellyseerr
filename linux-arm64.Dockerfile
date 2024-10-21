@@ -11,7 +11,7 @@ RUN mkdir /build && \
     cd /build && \
     CYPRESS_INSTALL_BINARY=0 pnpm install --frozen-lockfile && && \
     pnpm build && \
-    pnpm cache clean
+    pnpm cache delete
 
 
 FROM ${UPSTREAM_IMAGE}@${UPSTREAM_DIGEST_ARM64}
