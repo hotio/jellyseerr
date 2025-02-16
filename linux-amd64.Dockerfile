@@ -19,7 +19,7 @@ EXPOSE 5055
 ARG IMAGE_STATS
 ENV IMAGE_STATS=${IMAGE_STATS} WEBUI_PORTS="5055/tcp,5055/udp"
 
-RUN apk add --no-cache --repository=https://dl-cdn.alpinelinux.org/alpine/edge/community pnpm
+RUN apk add --no-cache pnpm
 
 COPY --from=builder /build/dist "${APP_DIR}/dist"
 COPY --from=builder /build/.next "${APP_DIR}/.next"
