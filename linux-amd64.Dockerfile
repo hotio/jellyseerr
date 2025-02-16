@@ -3,7 +3,7 @@ ARG UPSTREAM_DIGEST_AMD64
 
 FROM node:22-alpine AS builder
 RUN apk add --no-cache curl && \
-    npm install -g pnpm
+    npm install -g pnpm@9
 ARG VERSION
 ENV COMMIT_TAG=${VERSION}
 RUN mkdir /build && \
